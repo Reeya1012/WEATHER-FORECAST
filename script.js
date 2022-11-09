@@ -11,15 +11,15 @@ let weatherIcon = document.getElementById("weather-icon")
 const API_KEY = "6f223dfc2374e6791bd5e1fda92a164b";
 
 const updateWeatherIcon = (weather) => {
+    const snow = './Assets/snow.png'
+    const windy = './Assets/windy.png'
+    const mist = './Assets/mist.png'
+    const sunnyCloudy = './Assets/sunny-cloudy.png'
     const clear = './Assets/clear.png'
     const cloudy = './Assets/cloudy.png'
     const haze = './Assets/haze.png'
     const lightining = './Assets/lightining.png'
     const rain = './Assets/rain.png'
-    const snow = './Assets/snow.png'
-    const windy = './Assets/windy.png'
-    const mist = './Assets/mist.png'
-    const sunnyCloudy = './Assets/sunny-cloudy.png'
     switch (weather) {
         case "Clear":
             weatherIcon.src = clear
